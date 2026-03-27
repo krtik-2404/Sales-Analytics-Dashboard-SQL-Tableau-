@@ -1,69 +1,146 @@
-# Product Recommendation System for E-commerce Project
+# Sales Analytics & Product Recommendation Dashboard (SQL + Tableau)
 
-## Project Background
-This project focuses on enhancing product recommendations and understanding market trends for an online retail platform. A **SQL**-based data warehouse was designed to store and manage customer and sales data. The project involved analyzing 10,000 customer records, forecasting sales trends, and building personalized recommendation systems using **Python** to improve user experience. These insights help businesses identify profitable segments and optimize marketing efforts, leading to growth and increased customer satisfaction.
+## Overview
+This project focuses on analyzing sales performance and customer purchasing behavior for an online retail platform. A SQL-based data warehouse was designed to store and manage customer, product, and sales data. The analysis was performed on 10,000+ records to identify profitable segments, forecast sales trends, and generate business insights. Interactive Tableau dashboards were developed to support data-driven decision making.
 
-## Dataset Structure 
-The dataset for this project was organized into a SQL-based data warehouse with multiple tables for customer data, sales records, product information, and regional market data. The primary data structure used for this analysis and modeling is the combination of two major sources:
+---
 
-  * [Superstore Data](https://github.com/nikitaprasad21/Product-Recommendation-Analysis-Project/blob/main/data/Superstore-Data.csv): Superstore purchase history and revenue data.
-  * [Superstore Reviews Data](https://github.com/nikitaprasad21/Product-Recommendation-Analysis-Project/blob/main/data/Superstore-Dataset-Reviews.csv): Rating, review and summary of the product given by the customer. 
-    
-Note: The dataset comprised 10,000+ records, divided into 36 columns, the feature-target description you can see [here](https://github.com/nikitaprasad21/Product-Recommendation-Analysis-Project/blob/main/data/Features_Target_Description.txt).
+## Tech Stack
+- SQL  
+- Tableau  
+- Python  
+- Data Analysis  
+- KPI Monitoring  
+- Data Visualization  
 
+---
 
-## Executive Summary
-This project implemented a SQL-based Superstore Data Warehouse and developed product recommendation models to improve customer experience and sales strategies. By analyzing data from 10,000 customers, the system identified profitable market segments, forecasted sales trends, and provided personalized product recommendations. 
+## Dataset Structure
+The dataset is organized into a SQL-based data warehouse with multiple tables for:
 
-Key insights included the dominance of the "Consumer" segment in profitability, the significant role of California as the top-performing market, and strategies for improvement in underperforming regions such as North Dakota.
+- Customer data  
+- Sales transactions  
+- Product information  
+- Regional market data  
+- Customer reviews  
 
+Primary datasets used:
+- Superstore purchase history and revenue data  
+- Customer review and rating dataset  
 
-## Codes
-* The targed **SQL queries** regarding various business questions can be found [here](https://github.com/nikitaprasad21/Product-Recommendation-Analysis-Project/blob/main/notebooks/Products-Analysis.sql).
-* The interactive **Tableau dashboard** used to report and explore sales trends can be found [here](https://public.tableau.com/app/profile/nikita.prasad/viz/QuarterlySalesForecastingAnalysisDahboard/AnalysisDashboard).
-* The **Python Pipeline** used for EDA, Model Building for Recommendation Systems and Deployment of model can be found [here](https://github.com/nikitaprasad21/Product-Recommendation-Analysis-Project/blob/main/notebooks/Product-Recommendation-Project.ipynb).
-* The **Recommendation App** demo can be found [here](https://huggingface.co/spaces/nikitaprasad-analyst/product-recommendation-system).
+The dataset contains **10,000+ records** with **36 columns** representing customer, product, and sales features.
 
-## Dashboard
+---
 
-Here is the glimpse of dashboard.
-![Screenshot 2023-04-12 165416](https://user-images.githubusercontent.com/84131752/231447810-39810cfc-f423-4463-b6c8-e2eb4c73f878.png)
+## Project Objectives
+- Analyze sales performance across categories and regions  
+- Identify top-performing customer segments  
+- Track revenue and profit KPIs  
+- Forecast quarterly sales trends  
+- Generate product-level insights  
+- Support recommendation strategies using data  
 
+---
 
-## Insights
+## Dashboard Features
+The Tableau dashboard includes:
 
-#### Category 1: Profitable Market Segment
-   * The "Consumer" category is the most profitable customer segment among our customer segments, generating the highest revenue and profit, highlighting its significance to our business.
+- Total Sales KPI  
+- Total Profit KPI  
+- Total Quantity KPI  
+- Profit Ratio  
+- Quarterly Sales Forecasting  
+- State-wise Sales Distribution  
+- Highest & Lowest Selling Products  
+- Customer Segment Analysis  
+- Category-wise Performance  
 
-#### Category 2: Top Performing Region
-   * California emerged as the largest and most profitable market, contributing significantly to total sales.
-#### Category 3: Underperforming Markets
-   * North Dakota represents an underperforming market, requiring strategic attention to improve profitability and market share.
-#### Category 4: Growth Forecast
-   * The sales forecast predicts increased sales in Q4 of 2018, presenting growth opportunities for targeted marketing efforts.
+---
 
-## Recommendations
+## Live Dashboard Demo
 
-#### Category 1: Capitalize on Growth Opportunities:
+You can explore the interactive Tableau dashboard here:
 
-   * With the anticipated growth in Quarterly Sales Forecasting for 2018 Q4, it is advisable to allocate additional additional marketing resources to maximize sales opportunities during this period.
+🔗 **Live Tableau Dashboard**  
+https://public.tableau.com/app/profile/kartik.patil8747/viz/SalesAnalyticsDashboard_17746073120420/AnalysisDashboard
 
-#### Category 2: Focus on the "Consumer" Category:
-   * Develop targeted marketing campaigns, personalized promotions, and enhanced customer experiences to further boost profitability within the "Consumer" segment  segment.
+This interactive dashboard includes:
+- Sales KPI metrics  
+- Profit and revenue analysis  
+- Quarterly sales forecasting  
+- State-wise sales distribution  
+- Customer segment performance  
+- Category-wise insights  
 
-#### Category 3. Optimize Market Strategies:
-   * As California is the most profitable market, it is essential to continue investing in this region through focused marketing efforts, maintaining customer loyalty, and increasing market share.
-     
-#### Category 4. Improve Underperforming Markets:
+---
 
-   * Conduct in-depth market research in North Dakota to understand consumer behavior and tailor marketing efforts to boost sales and profitability in the region.
+## Key Business Insights
 
-## Assumptions and Caveats
-#### Assumptions:
+### Profitable Customer Segment
+The **Consumer segment** generated the highest revenue and profit, making it the most valuable customer group.
 
-* The data provided for analysis is accurate and reflects customer preferences and purchasing patterns.
-* The sales forecast is based on historical trends and assumes no major disruptions in market behavior.
-#### Caveats:
+### Top Performing Region
+**California** emerged as the most profitable region contributing significantly to total sales.
 
-* Seasonal fluctuations and external factors like economic changes or unforeseen events may impact sales trends and market behavior, making forecast predictions less accurate.
-* The recommendation models are built on available data; their effectiveness may vary if customer preferences shift or if there is insufficient data for new products.
+### Underperforming Markets
+Certain regions showed lower profitability and require targeted strategies.
+
+### Sales Trend Forecast
+Sales forecasting indicates **Q4 growth**, suggesting strong seasonal demand and marketing opportunities.
+
+---
+
+## KPI Metrics Tracked
+- Total Sales  
+- Total Profit  
+- Profit Ratio  
+- Quantity Sold  
+- Category Performance  
+- Regional Sales  
+- Customer Segment Revenue  
+- Quarterly Growth  
+
+---
+
+## Business Recommendations
+
+### Focus on High-Value Customers
+Prioritize marketing campaigns for the **Consumer segment** to maximize revenue.
+
+### Strengthen Top Markets
+Increase investment in high-performing regions.
+
+### Improve Low Performing Regions
+Implement targeted campaigns to improve sales in underperforming areas.
+
+### Seasonal Strategy
+Prepare marketing and inventory for **Q4 growth period**.
+
+---
+
+## SQL Analysis
+SQL queries were used to:
+- Calculate revenue KPIs  
+- Segment customers  
+- Analyze product performance  
+- Identify regional trends  
+- Generate dashboard-ready datasets  
+
+---
+
+## Project Outcome
+- Built SQL-based data warehouse  
+- Created interactive Tableau dashboard  
+- Identified profitable segments  
+- Generated business insights  
+- Improved decision-making support  
+
+---
+
+## Use Cases
+- Sales performance monitoring  
+- Customer segmentation  
+- Product analysis  
+- Business KPI tracking  
+- Revenue forecasting  
+- Data-driven marketing  
